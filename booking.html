@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>来访者预约 | 翊晨心理</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <div class="topbar"><span>来访者预约</span><span>提交后记录会保存在当前浏览器中</span></div>
+  <header class="site-header"><a class="brand" href="index.html"><img src="assets/logo.jpg" alt="翊晨心理标志"><span>翊晨心理</span></a><nav class="nav"><a href="index.html">首页</a><a href="about.html">翊晨介绍</a><a href="team.html">咨询师团队</a><a href="services.html">心理服务</a><a href="programs.html">课程活动</a><a class="active" href="booking.html">来访预约</a><a href="tests.html">心理测试</a><a href="contact.html">联系我们</a></nav></header>
+  <section class="page-hero"><h1>来访者预约</h1><div class="breadcrumb">首页 / 来访者预约</div></section>
+  <main class="page-shell">
+    <aside class="sidebar"><div class="sidebar-title">预约咨询</div><a class="active" href="booking.html">填写预约</a><a href="team.html">选择咨询师</a><a href="tests.html">心理测试</a><a href="contact.html">联系方式</a></aside>
+    <section class="page-main">
+      <h2>填写预约信息</h2>
+      <p>请填写姓名、联系方式、咨询师、咨询方向和具体时间。正式上线时建议接入数据库、短信提醒、后台审核和咨询师排班系统。</p>
+      <form id="bookingForm" class="form-panel">
+        <div class="field-grid">
+          <label><span>姓名</span><input name="name" required placeholder="请输入姓名"></label>
+          <label><span>联系方式</span><input name="contact" required placeholder="手机 / 微信 / 邮箱"></label>
+          <label><span>预约咨询师</span><select id="bookingCounselor" name="counselor"><option>陈老师</option><option>林老师</option><option>周老师</option><option>暂不指定</option></select></label>
+          <label><span>咨询方向</span><select name="topic"><option>个人成长咨询</option><option>婚姻情感咨询</option><option>家庭亲子咨询</option><option>企业 EAP 服务</option><option>课程和团体活动</option></select></label>
+          <label><span>预约方式</span><select name="mode"><option>线下面询</option><option>线上视频咨询</option><option>电话初步沟通</option></select></label>
+          <label><span>预约时间</span><input name="time" type="datetime-local" required></label>
+        </div>
+        <label><span>补充说明</span><textarea name="message" rows="5" placeholder="可以简单写下目前最想咨询的问题、方便联系的时间等"></textarea></label>
+        <button class="button primary" type="submit">提交预约</button>
+        <p id="bookingStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-grid"><div><h3>翊晨心理</h3><p>预约信息原型保存在本机浏览器中。</p></div><div><strong>入口</strong><a href="team.html">咨询师团队</a><a href="tests.html">心理测试</a></div><div><strong>联系</strong><p>请替换真实联系方式。</p></div></div><div class="footer-bottom">© 2026 翊晨心理 版权所有</div></footer>
+  <nav class="mobile-dock"><a href="index.html">首页</a><a href="booking.html">预约</a><a href="tests.html">测试</a><a href="contact.html">联系</a></nav>
+  <script src="script.js"></script>
+</body>
+</html>

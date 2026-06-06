@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>心理测试 | 翊晨心理</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <div class="topbar"><span>心理测试</span><span>测试结果仅供自我了解和咨询前沟通</span></div>
+  <header class="site-header"><a class="brand" href="index.html"><img src="assets/logo.jpg" alt="翊晨心理标志"><span>翊晨心理</span></a><nav class="nav"><a href="index.html">首页</a><a href="about.html">翊晨介绍</a><a href="team.html">咨询师团队</a><a href="services.html">心理服务</a><a href="programs.html">课程活动</a><a href="booking.html">来访预约</a><a class="active" href="tests.html">心理测试</a><a href="contact.html">联系我们</a></nav></header>
+  <section class="page-hero"><h1>心理测试</h1><div class="breadcrumb">首页 / 心理测试</div></section>
+  <main class="page-shell">
+    <aside class="sidebar"><div class="sidebar-title">心理测试</div><a class="active" href="tests.html">常用测试</a><a href="#records">结果记录</a><a href="booking.html">预约咨询</a><a href="services.html">心理服务</a></aside>
+    <section class="page-main">
+      <h2>来访者注册与测试</h2>
+      <p>当前原型包含 PHQ-9、GAD-7、PSS-10。结果会保存在当前浏览器本地，可由来访者查看，也可由咨询师输入 PIN 查看全部记录。正式上线需要账号系统、数据库和权限管理。</p>
+      <div class="test-layout">
+        <aside class="test-card">
+          <h3>注册 / 登录</h3>
+          <form id="accountForm" class="compact-form">
+            <input name="visitorName" required placeholder="姓名">
+            <input name="visitorContact" required placeholder="手机号 / 微信 / 邮箱">
+            <button class="button primary" type="submit">进入测试</button>
+          </form>
+          <div id="currentVisitor" class="current-visitor">当前未登录</div>
+          <button id="clearVisitor" class="button" type="button">退出当前来访者</button>
+        </aside>
+        <section class="test-card">
+          <div class="field-grid">
+            <label><span>选择测试</span><select id="testSelect"><option value="phq9">PHQ-9 抑郁筛查</option><option value="gad7">GAD-7 焦虑筛查</option><option value="pss10">PSS-10 压力知觉量表</option></select></label>
+            <label><span>操作</span><button id="startTest" class="button" type="button">生成题目</button></label>
+          </div>
+          <form id="testForm" class="question-list"></form>
+          <div id="testResult" class="result-box"></div>
+        </section>
+      </div>
+      <section id="records" class="records">
+        <h2>测试记录</h2>
+        <div class="action-row"><button id="showVisitorRecords" class="button small" type="button">来访者查看</button><button id="showCounselorRecords" class="button small" type="button">咨询师查看全部</button></div>
+        <div id="recordsList">暂无记录</div>
+      </section>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-grid"><div><h3>翊晨心理</h3><p>测试结果不能替代医学诊断。</p></div><div><strong>入口</strong><a href="booking.html">预约咨询</a><a href="services.html">心理服务</a></div><div><strong>联系</strong><p>请替换真实联系方式。</p></div></div><div class="footer-bottom">© 2026 翊晨心理 版权所有</div></footer>
+  <nav class="mobile-dock"><a href="index.html">首页</a><a href="booking.html">预约</a><a href="tests.html">测试</a><a href="contact.html">联系</a></nav>
+  <script src="script.js"></script>
+</body>
+</html>
